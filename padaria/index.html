@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pão quentinho, doces e cafés artesanais."
+    />
+    <title>padaria</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a
+          href="#"
+          class="logo"
+          aria-label="zeca padarias🍞 — página inicial"
+          >Zeca adarias🍞</a
+        >
+        <nav aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#lista">Lista</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">Zeca Padarias 🍞</h1>
+          <p class="lead">
+            Melhores pães e bolos que você vai comer na sua vida!! Volte
+            sempre!.
+          </p>
+          <a class="btn" href="#cardapio">Ver cardápio</a>
+        </div>
+      </section>
+
+
+
+      <section id="sobre" class="section" aria-labelledby="sobre-title">
+        <div class="container">
+          <h2 id="sobre-title">Uma breve história sobre nós</h2>
+          <h3>
+            Na Zeca Padarias, cada receita carrega tradição, carinho e o
+            sabor de momentos especiais. Nascemos com o objetivo de oferecer
+            produtos frescos e atendimento acolhedor para toda a comunidade. Ao
+            longo dos anos, nos tornamos parte da rotina dos clientes, servindo
+            pães, doces e cafés preparados com dedicação todos os dias. Mais do
+            que uma padaria, somos um lugar de encontro, aconchego e sabor para
+            toda a família.
+          </h3>
+        </div>
+      </section>
+            <section id="lista" class="section" aria-labelledby="lista-title">
+        <div class="container">
+          <h2 id="lista-title">Lista de itens</h2>
+          <p><strong>Coxinhas</strong></p>
+          <p><strong>Esfiha</strong></p>
+          <p><strong>Pizza</strong></p>
+          <p><strong>enroladinho</strong></p>
+          <p><strong>Torradas</strong></p>
+          <p><strong>Cookies</strong></p>
+          <p><strong>doces caseiros</strong></p>
+          <p><strong>Panetone</strong></p>
+          <p><strong>Chocotone</strong></p>
+          <p><strong>Sonho</strong></p>
+        </div>
+      </section>
+      <section
+        id="cardapio"
+        class="section section--alt"
+        aria-labelledby="cardapio-title">
+        <div class="container">
+          <h2 id="cardapio-title">Cardápio</h2>
+          <ul class="cards" id="lista-itens" aria-live="polite">
+            <!-- Itens injetados via JS a partir de js/dados.js -->
+          </ul>
+        </div>
+      </section>
+
+      <section id="contato" class="section" aria-labelledby="contato-title">
+        <div class="container">
+          <h2 id="contato-title">Fale com a gente</h2>
+          <form class="form" novalidate aria-describedby="form-help">
+            <p id="form-help" class="muted">
+              Os campos marcados com * são obrigatórios.
+            </p>
+
+            <div class="field">
+              <label for="nome">Nome *</label>
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+            <p id="form-status" role="status" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>
+          © <span id="ano"></span> Padaria do Bairro. Projeto acadêmico — Curso
+          de Web Design Híbrido · Vocação.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
